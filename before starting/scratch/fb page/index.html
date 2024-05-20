@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-text">
+                <a class="text" href="index.html">
+                    facebook
+                </a>
+            </div>
+            <div class="login-form">
+                <form>
+                <table class="login-controlls">
+                    <tbody>
+                        <tr>
+                            <td><label  class="text-label">Email or Mobile</label></td>
+                            <td><label class="text-label">Password</label></td>
+                        </tr>
+                        <tr>
+                            <td><input id="email" type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="submit" value="Login" class="button"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a class="forget">Forgotten account?</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            </div>
+         
+            <button style="margin-top: 100px;" onclick="show()">click mee</button>
+            <h1 id="number"></h1>
+        </div>
+        <div style="height: 300px; width: 300px;border:solid 3px; " id="screen"></div>
+        <button onclick="color('blue')">blue</button>
+        <button onclick="color('green')">green</button>
+        <button onclick="color('red')">red</button>
+        <button onclick="color('yellow')">yellow</button>
+    </div>
+    <script>
+
+        function color(col){
+            document.getElementById("screen").style.background=col;
+        }
+
+
+        function show(){
+            
+            var Email=document.getElementById("email").value
+            document.getElementById("number").innerHTML=Email;
+            window.alert(Email)
+        }
+        var person={
+            name:"anu",
+            age:18
+        }
+        console.log("name =" +person.name)
+    </script>
+</body>
+</html>
